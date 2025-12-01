@@ -1,9 +1,23 @@
 doctype html
 html(lang="en")
-	include components/head
+  include components/head
 
-body
-	main
-		include components/intro.pug
-		include components/main.pug
-		include components/scripts
+  body
+    main
+      include components/intro.pug
+      include components/main.pug
+      include components/scripts
+  
+    // 在这里添加备案信息 - 页面最底部
+    footer.footer
+      .footer-inner
+        span.beian
+          a(href="https://beian.miit.gov.cn/" rel="noopener" target="_blank") 辽ICP备2024039285号
+          span.divider |
+          img(src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" alt="")
+          a(href="https://beian.mps.gov.cn/#/query/webSearch?code=32011502012931" rel="noopener" target="_blank") 苏公网安备32011502012931号
+          span.divider |
+        span.copyright
+          | &copy; 2025 
+          span.with-love ♥
+          |  公子熄

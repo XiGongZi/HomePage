@@ -99,3 +99,62 @@
 		}
 	}
 }
+/* 备案信息样式 - 跟随内容到底部 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  text-align: center;
+  font-size: 12px;
+  color: #eee;
+}
+
+/* 其他样式保持不变 */
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+}
+
+.beian {
+  margin-bottom: 5px;
+}
+
+.beian a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.beian a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.beian img {
+  height: 14px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.copyright {
+  font-size: 11px;
+}
+
+.with-love {
+  margin: 0 5px;
+}
+
+.with-love .fa-heart {
+  color: #e74c3c;
+}
+
+/* 确保主体内容不被备案信息遮挡 */
+main {
+  padding-bottom: 80px; /* 为备案信息留出空间 */
+}
